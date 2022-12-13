@@ -9,7 +9,7 @@
     |-- ms_auth/                     # Microservice
     |   |-- Dockerfile               # Instructions to build container
     |   |-- modelCreate.sql          # Script to populate database
-    |-- build-run-ms_postgres.ps1    # Build image + Run Container + View the logs container for troubleshootings the nginx service
+    |-- build-run-ms_postgres.ps1    # Build image + Run Container + View the logs container for troubleshootings
     |-- README.md                    # Readme file
     
 # Docker Desktop
@@ -26,10 +26,13 @@ PS C:\..> .\build-run-ms_postgres.ps1
 
 # Graphic documentation
 
+first, the folder data it's empty
 ![Alt text](/docs/Screenshot_1.png?raw=true)
 ![Alt text](/docs/Screenshot_2.png?raw=true)
 ![Alt text](/docs/Screenshot_3.png?raw=true)
 ![Alt text](/docs/Screenshot_4.png?raw=true)
+
+now, the data from postgres exist into folder windows
 ![Alt text](/docs/Screenshot_5.png?raw=true)
 ![Alt text](/docs/Screenshot_6.png?raw=true)
 ![Alt text](/docs/Screenshot_7.png?raw=true)
