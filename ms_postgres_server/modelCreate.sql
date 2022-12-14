@@ -1,7 +1,7 @@
 CREATE TABLE towork
 (
-    id              SERIAL PRIMARY KEY,
-    description     VARCHAR(250) not null,
+    id              SERIAL NOT NULL PRIMARY KEY,
+    description     VARCHAR(250) NOT NULL,
     last_modified   TIMESTAMP
 );
 
