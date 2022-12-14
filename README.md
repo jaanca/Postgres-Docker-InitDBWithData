@@ -1,16 +1,16 @@
 # Description
 
-- Create a postgres engine linux in docker container and populate the data from a .sql file
+- Create a postgres server for linux in docker container and populate the data from a .sql file
 - Using powershell initialize the system in docker desktop for Windows
 
 # Description of the files
     .
-    |-- docs/                        # Screenshots for running system
-    |-- ms_auth/                     # Microservice
-    |   |-- Dockerfile               # Instructions to build container
-    |   |-- modelCreate.sql          # Script to populate database
-    |-- build-run-ms_postgres.ps1    # Build image + Run Container + View the logs container for troubleshootings
-    |-- README.md                    # Readme file
+    |-- docs/                               # Screenshots for running system
+    |-- ms_auth/                            # Microservice
+    |   |-- Dockerfile                      # Instructions to build container
+    |   |-- modelCreate.sql                 # Script to populate database
+    |-- build-run-ms_postgres_server.ps1    # Build image + Run Container + View the logs container for troubleshootings
+    |-- README.md                           # Readme file
     
 # Docker Desktop
 
@@ -21,7 +21,7 @@ Install Docker Desktop + WSL2
 # Create Container
 ```console
 Execute script, read logs and Ctrl+C to Exit to continue with next one
-PS C:\..> .\build-run-ms_postgres.ps1
+PS C:\..> .\build-run-ms_postgres_server.ps1
 ```
 
 # Graphic documentation

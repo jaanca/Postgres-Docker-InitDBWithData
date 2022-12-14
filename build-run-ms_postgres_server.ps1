@@ -7,10 +7,10 @@ $folder_data="C:\\tmp\\data"
 # Build + Run a sample microservice like webpage
 
 # Local variables
-$containername="ms_postgres"
+$containername="ms_postgres_server"
 $imagename=$containername+":latest"
 $containerPortExposetoHost=5432
-$dockerContext="ms_postgres/"
+$dockerContext="ms_postgres_server/"
 
 # Build
 # docker pull $imagename
