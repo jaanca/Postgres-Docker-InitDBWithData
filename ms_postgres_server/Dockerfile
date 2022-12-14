@@ -1,6 +1,8 @@
 FROM postgres:14.5
 EXPOSE 5432
 
+# Images
+# https://hub.docker.com/_/postgres
 # Environment variables
 # https://www.docker.com/blog/how-to-use-the-postgres-docker-official-image/
 # POSTGRES_USER – Specifies a user with superuser privileges and a database with the same name. Postgres uses the default user when this is empty.

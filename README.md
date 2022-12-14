@@ -37,3 +37,5 @@ PS C:\..> .\build-run-ms_postgres_server.ps1
 ![Alt text](/docs/Screenshot_6.png?raw=true)
 ![Alt text](/docs/Screenshot_7.png?raw=true)
 ![Alt text](/docs/Screenshot_8.png?raw=true)
+![Alt text](/docs/Screenshot_9.png?raw=true)
+![Alt text](/docs/Screenshot_10.png?raw=true)

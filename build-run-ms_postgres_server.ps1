@@ -10,18 +10,19 @@ $folder_data="C:\\tmp\\data"
 $containername="ms_postgres_server"
 $imagename=$containername+":latest"
 $containerPortExposetoHost=5432
+$containerPortExposeInternal=5432
 $dockerContext="ms_postgres_server/"
 
 # Build
 # docker pull $imagename
 cd $dockerContext
-docker build . -t $imagename -f Dockerfile --build-arg GLOBAL_POSTGRES_PASSWORD=$GLOBAL_POSTGRES_PASSWORD
+docker build . -t $imagename -f Dockerfile
 cd ..
 
 # Release
 docker stop $containername
 docker container rm $containername
-$containerPorts="$containerPortExposetoHost"+":"+"$containerPortExposetoHost"
+$containerPorts="$containerPortExposetoHost"+":"+"$containerPortExposeInternal"
 $volumeData="$folder_data\:/var/lib/postgresql/data"
 docker run -d `
     -p $containerPorts `
@@ -31,7 +32,7 @@ docker run -d `
     --name $containername `
     $imagename
 
-$url="Exposed service: redis://"+$containername+":"+$containerPortExposetoHost
+$url="Exposed service: psql host=localhost port=$containerPortExposetoHost dbname=postgres user=postgres password=$POSTGRES_PASSWORD"
 write-output "############################################"
 write-output $url
 
